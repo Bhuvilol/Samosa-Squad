@@ -161,15 +161,192 @@
                     <small class="error-message" id="password-error"></small>
                     <small class="password-strength" id="password-strength"></small>
                 </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                    <small class="error-message" id="confirm-password-error"></small>
-                </div>
+                
                 <div class="form-group">
                     <label for="two-factor-auth">Two-Factor Authentication:</label>
                     <input type="checkbox" id="two-factor-auth" name="two-factor-auth">
                     <label for="two-factor-auth">Enable Two-Factor Authentication</label>
                 </div>
             </fieldset>
-    
+     <!-- Preferences Section -->
+     <fieldset>
+        <legend>Preferences</legend>
+        <div class="form-group">
+            <label for="language">Preferred Language:</label>
+            <select id="language" name="language">
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="notifications">Notification Settings:</label>
+            <select id="notifications" name="notifications">
+                <option value="email">Email Notifications</option>
+                <option value="sms">SMS Notifications</option>
+                <option value="push">Push Notifications</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="interests">Interests:</label>
+            <div class="interests-group">
+                <input type="checkbox" id="interest1" name="interests" value="technology">
+                <label for="interest1">Technology</label>
+                <input type="checkbox" id="interest2" name="interests" value="sports">
+                <label for="interest2">Sports</label>
+                <input type="checkbox" id="interest3" name="interests" value="music">
+                <label for="interest3">Music</label>
+                <input type="checkbox" id="interest4" name="interests" value="art">
+                <label for="interest4">Art</label>
+            </div>
+        </div>
+    </fieldset>
+
+    <!-- Social Media Section -->
+    <fieldset>
+        <legend>Social Media</legend>
+        <div class="form-group">
+            <label for="twitter">Twitter:</label>
+            <input type="url" id="twitter" name="twitter" placeholder="https://twitter.com/username">
+        </div>
+        <div class="form-group">
+            <label for="linkedin">LinkedIn:</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
+        </div>
+        <div class="form-group">
+            <label for="instagram">Instagram:</label>
+            <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/username">
+        </div>
+    </fieldset>
+
+    <!-- Profile Picture Section -->
+    <fieldset>
+        <legend>Profile Picture</legend>
+        <div class="form-group">
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+            <div id="profile-pic-preview"></div>
+        </div>
+    </fieldset>
+
+    <!-- Account Section -->
+    <fieldset>
+        <legend>Account</legend>
+        <div class="form-group">
+            <label for="status">Account Status:</label>
+            <input type="text" id="status" name="status" value="Active" readonly>
+        </div>
+        <div class="form-group">
+            <button type="button" id="deactivate-button">Deactivate Account</button>
+        </div>
+    </fieldset>
+
+    <!-- Buttons Section -->
+    <div class="button-group">
+        <button type="submit" id="save-button">Save Changes</button>
+        <button type="button" id="cancel-button">Cancel</button>
+        <button type="reset" id="reset-button">Reset</button>
+    </div>
+</form>
+</div>
+
+
+
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-logo">
+<img src="images/Logo.png" alt="SAFE101 Logo">
+<h2>SAFE101</h2>
+<p>SAFE101 is an innovative app that uses cutting-edge technology to ensure the user's safety at all times. This
+  app makes safety within every woman’s reach.</p>
+</div>
+
+<div class="footer-links">
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="Features.html">Features</a></li>
+  <li><a href="Blogs.html">Blogs</a></li>
+  <li><a href="Help.html">Help</a></li>
+  <li><a href="Contact.html">Contact Us</a></li>
+</ul>
+</div>
+
+<div class="footer-connect">
+&nbsp
+<br><br>
+<p>India: +91 6969696969</p>
+<p>Email: <a href="mailto:info@safe101.app">info@safe101.app</a></p>
+</div>
+
+<div class="footer-download">
+<h3>Download now</h3>
+<div>
+    <a href="#"><img
+            src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+            alt="Play Store" height="65vh" width="165vw" />
+    </a>
+    <a href="#"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8JWN0o1lukA7fuFuxCw53m_sx0haKyKBqg&s"
+            alt="Play Store" height="45vh" width="145vw" />
+    </a>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom">
+<ul>
+<li><a href="#">Terms of Service</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Disclaimer Policy</a></li>
+<li><a href="#">Refund and Cancellation Policy</a></li>
+<li><a href="#">Shipping & Delivery Policy</a></li>
+</ul>
+<p>Copyright © 2024 SAFE101 Pty Ltd. All rights reserved.</p>
+</div>
+</footer>
+
+
+
+
+<script src="Base.js"></script>
+<script>
+document.getElementById('profile-pic').addEventListener('change', function(event) {
+const previewContainer = document.getElementById('profile-pic-preview');
+const file = event.target.files[0];
+if (file) {
+const reader = new FileReader();
+reader.onload = function(e) {
+    previewContainer.innerHTML = `<img src="${e.target.result}" alt="Profile Picture">`;
+};
+reader.readAsDataURL(file);
+}
+});
+
+document.getElementById('bio').addEventListener('input', function() {
+const bioText = this.value;
+const bioCount = document.getElementById('bio-count');
+bioCount.textContent = `${bioText.length}/250`;
+});
+
+document.getElementById('password').addEventListener('input', function() {
+const passwordStrength = document.getElementById('password-strength');
+const password = this.value;
+let strength = '';
+
+if (password.length < 6) {
+strength = 'Weak';
+passwordStrength.style.color = 'red';
+} else if (password.length < 10) {
+strength = 'Medium';
+passwordStrength.style.color = 'orange';
+} else {
+strength = 'Strong';
+passwordStrength.style.color = 'green';
+}
+
+passwordStrength.textContent = `Password strength: ${strength}`;
+});
+
+document.getElementById('edit-profile-form').addEventListener('submit', function(event) {
+event.preventDefault();
+

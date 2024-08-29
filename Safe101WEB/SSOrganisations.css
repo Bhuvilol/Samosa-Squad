@@ -20,13 +20,13 @@ header {
 
 header h1 {
     color: #333333;
-   
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
 header p {
     color: #555555;
-    
+    font-size: 1.2em;
     margin: 0;
 }
 
@@ -35,7 +35,8 @@ header p {
     justify-content: space-around;
     margin-bottom: 40px;
     padding: 20px;
-   
+    background-color: #e9f5ff;
+    border-radius: 8px;
 }
 mission, .vision {
     width: 45%;
@@ -70,14 +71,7 @@ mission, .vision {
     gap: 20px;
 }
 
-.team-member {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+
 
 .team-member:hover {
     transform: scale(1.05);

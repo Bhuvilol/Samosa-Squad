@@ -1,8 +1,5 @@
 {
-    font-family: "Patrick Hand";
-    font-style: normal;
-    font-variant: normal;
-    line-height: 26.4px;
+   
 }
 
 main {
@@ -14,4 +11,9 @@ h2 {
     font-family: 'Arial Black', Gadget, sans-serif;
     text-align: center;
     margin-bottom: 40px;
+}
+friend-list .friends-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

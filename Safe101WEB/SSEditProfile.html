@@ -161,7 +161,12 @@
                     <small class="error-message" id="password-error"></small>
                     <small class="password-strength" id="password-strength"></small>
                 </div>
-                
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <small class="error-message" id="confirm-password-error"></small>
+            </div>
                 <div class="form-group">
                     <label for="two-factor-auth">Two-Factor Authentication:</label>
                     <input type="checkbox" id="two-factor-auth" name="two-factor-auth">
@@ -349,4 +354,79 @@ passwordStrength.textContent = `Password strength: ${strength}`;
 
 document.getElementById('edit-profile-form').addEventListener('submit', function(event) {
 event.preventDefault();
+// Form validation
+let isValid = true;
+    const errorMessages = document.querySelectorAll('.error-message');
+    errorMessages.forEach(error => error.style.display = 'none');
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const confirmPassword = document.getElementById('confirm-password').value.trim();
+
+    if (name === '') {
+        isValid = false;
+        document.getElementById('name-error').textContent = 'Name is required';
+        document.getElementById('name-error').style.display = 'block';
+    }
+
+    if (email === '' || !validateEmail(email)) {
+        isValid = false;
+        document.getElementById('email-error').textContent = 'Valid email is required';
+        document.getElementById('email-error').style.display = 'block';
+    }
+
+    if (phone === '' || !validatePhone(phone)) {
+        isValid = false;
+        document.getElementById('phone-error').textContent = 'Valid phone number is required';
+        document.getElementById('phone-error').style.display = 'block';
+    }
+
+    if (password === '') {
+        isValid = false;
+        document.getElementById('password-error').textContent = 'Password is required';
+        document.getElementById('password-error').style.display = 'block';
+    }
+
+    if (password !== confirmPassword) {
+        isValid = false;
+        document.getElementById('confirm-password-error').textContent = 'Passwords do not match';
+        document.getElementById('confirm-password-error').style.display = 'block';
+    }
+
+    if (isValid) {
+        alert('Profile updated successfully!');
+    }
+});
+
+document.getElementById('cancel-button').addEventListener('click', function() {
+    if (confirm('Are you sure you want to cancel? Unsaved changes will be lost.')) {
+        window.location.href = 'profile.html';
+    }
+});
+
+document.getElementById('deactivate-button').addEventListener('click', function() {
+    if (confirm('Are you sure you want to deactivate your account? This action cannot be undone.')) {
+        // Handle account deactivation logic
+        alert('Account deactivated.');
+    }
+});
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+function validatePhone(phone) {
+    const re = /^\d{10}$/;
+    return re.test(phone);
+}
+
+
+  </script>
+</body>
+
+</html>
+
 

@@ -1,0 +1,66 @@
+{
+    font-family: "Patrick Hand";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+}
+
+main {
+    padding: 20px 10%;
+}
+
+.bg1 {
+    background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+}
+
+.intro h2{
+    color: #e91e63;
+    font-size: 2em;
+    /* font-family: 'Arial Black', Gadget, sans-serif; */
+}
+
+.intro h3{
+    color: #e91e63;
+    font-size: 1.5em;
+    /* font-family: 'Arial Black', Gadget, sans-serif; */
+}
+
+/* Form Styles */
+.feedback-form {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #e91e63;
+}
+
+.feedback-form form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.feedback-form label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.feedback-form .stars {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.feedback-form .stars input[type="radio"] {
+    display: none;
+}

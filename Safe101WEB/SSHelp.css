@@ -64,6 +64,11 @@ header p {
     margin-bottom: 10px;
 }
 
+.contact-box h3 {
+    font-size: 1.2em;
+    color: #333333;
+    margin: 10px 0;
+}
 
 .contact-box p {
     color: #666666;

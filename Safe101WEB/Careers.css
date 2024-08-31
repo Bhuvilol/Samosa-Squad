@@ -12,8 +12,8 @@ main {
 .bg1 {
     background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
 }
-.into 
-{
+
+.into {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -21,6 +21,7 @@ main {
     box-shadow: 0px 1px 10px rgb(85, 85, 85);
     background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
 }
+
 .open-positions .job-listing {
     background-color: white;
     padding: 20px;

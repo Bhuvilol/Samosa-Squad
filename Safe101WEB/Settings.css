@@ -23,7 +23,7 @@ h1 {
     color: #333333;
     font-size: 2.5em;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 3px  rgb(173, 41, 255);
+    text-shadow: 2px 2px 3px rgb(173, 41, 255);
 }
 
 .settings-tabs {
@@ -41,7 +41,7 @@ h1 {
     cursor: pointer;
     font-size: 1.5em;
     transition: background-color 0.3s, transform 0.3s;
-    text-shadow: 0.1px 0.1px 1px  rgb(0, 0, 0);
+    text-shadow: 0.1px 0.1px 1px rgb(0, 0, 0);
     margin: 0px 5px;
 }
 

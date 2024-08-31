@@ -17,17 +17,14 @@ main {
     color: #774ecb;
     text-shadow: 0.1px 0.1px 2px #6032bb;
     font-size: 2.3em;
-    /* font-family: 'Arial Black', Gadget, sans-serif; */
 }
 
 .intro h3 {
     color: #774ecb;
     text-shadow: 0.1px 0.1px 2px #6032bb;
     font-size: 1.8em;
-    /* font-family: 'Arial Black', Gadget, sans-serif; */
 }
 
-/* Form Styles */
 .feedback-form {
     background-color: white;
     padding: 30px;
@@ -93,7 +90,6 @@ main {
     transform: scale(1.05);
 }
 
-/* Testimonials Styles */
 .testimonials {
     margin: 30px 0;
 }
@@ -123,7 +119,6 @@ main {
     color: #777;
 }
 
-/* Additional Info Styles */
 .additional-info {
     background-color: #f1f1f1;
     padding: 30px;

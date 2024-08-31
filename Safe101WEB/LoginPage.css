@@ -33,7 +33,7 @@ header {
 }
 
 .logo img {
-    height: 60px; /* Increased height of logo */
+    height: 60px;
     margin-right: 10px;
 }
 
@@ -53,9 +53,9 @@ nav ul li a {
     color: #333;
     display: flex;
     align-items: center;
-    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* Added transition for hover effect */
-    padding: 5px 10px; /* Added padding for better click area */
-    border-radius: 5px; /* Rounded corners for hover effect */
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav ul li a i {
@@ -63,9 +63,9 @@ nav ul li a i {
 }
 
 nav ul li a:hover {
-    color: #f86c6b; /* Change text color on hover */
-    background-color: #f0f0f0; /* Light background color on hover */
-    transform: translateY(-3px); /* Slight upward movement on hover */
+    color: #f86c6b;
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
 }
 
 .dark-mode nav ul li a {
@@ -89,7 +89,6 @@ main {
     align-items: flex-start;
 }
 
-/* Main content styling */
 .content {
     display: flex;
     align-items: flex-start;
@@ -97,26 +96,24 @@ main {
 }
 
 .main-image {
-    width: 700px; /* Fixed width for image */
+    width: 900px; /* Fixed width for image */
     /* height: 700px; */
 }
 
 .text {
-    max-width: calc(100% - 470px); /* Adjust based on image width and gap */
+    max-width: calc(100% - 470px);
 }
 
-/* Increase the size of the main heading */
 .text h1 {
-    font-size: 3.5em; /* Increased size */
+    font-size: 3.5em;
     margin-bottom: 20px;
-    transition: transform 0.3s ease; /* Added transition for hover effect */
+    transition: transform 0.3s ease;
 }
 
 .text h1:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
-/* Increase the size of the button text slightly */
 .text button {
     background-color: #f86c6b;
     color: #fff;
@@ -130,17 +127,17 @@ main {
 
 .text button:hover {
     background-color: #e63946;
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
 .sign-in {
     background-color: white;
-    padding: 40px;
+    padding: 40px 50px 40px 50px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    max-width: 450px; /* Increased width */
-    height: auto; /* Adjust height automatically */
-    min-height: 500px; /* Minimum height to make it taller */
+    max-width: 450px;
+    height: auto;
+    min-height: 500px;
     margin: 20px auto;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
@@ -162,7 +159,7 @@ main {
 .social-login {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between social buttons */
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -175,8 +172,8 @@ main {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    gap: 10px; /* Space between icon and text */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for hover effect */
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-login .google {
@@ -191,16 +188,16 @@ main {
 
 .social-login .google i,
 .social-login .facebook i {
-    font-size: 1.2em; /* Icon size */
+    font-size: 1.2em;
 }
 
 .social-login button:hover {
-    background-color: #c1351d; /* Darker shade for Google */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #c1351d;
+    transform: scale(1.05);
 }
 
 .social-login .facebook:hover {
-    background-color: #365899; /* Darker shade for Facebook */
+    background-color: #365899;
 }
 
 .sign-in input[type="tel"] {

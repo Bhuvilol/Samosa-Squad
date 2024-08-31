@@ -143,14 +143,17 @@ header p {
     font-size: 1em;
     margin-top: 10px;
 }
+
 .contact-box:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
 .helpline-box:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
 .faq:hover {
     background-color: #e9ecef;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);

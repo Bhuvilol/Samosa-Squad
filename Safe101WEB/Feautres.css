@@ -5,356 +5,6 @@
   line-height: 26.4px;
 }
 
-/* html, body {
-  height: 500%;
-  margin: 0;
-  padding: 0;
-} */
-
-/* header {
-  background-color: #2f5fe2;
-  border-bottom: 2px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px; 
-  height: 90px; 
-}
-
-.dark-mode {
-  background-color: #000000;
-  color: #f6f6f6;
-} */
-
-/* nav {
-  display: flex;
-  width: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  margin-right: 15px;
-}
-
-.logo img {
-  width: 40px; 
-  margin-right: 10px;
-}
-
-nav .logo h1 {
-  font-size: 20px; 
-  margin: 0;
-  color: #ffffff;
-}
-
-.hamburger-menu {
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.hamburger-menu img {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  color: #fff;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 15px; 
-  align-items: center;
-  flex-grow: 1; 
-  justify-content: center; 
-}
-
-.menu li {
-  display: flex;
-  align-items: center;
-}
-
-.menu li a {
-  display: flex;
-  justify-content: center;
-  padding: 10px 20px;
-  background-color: #f1c40f; 
-  color: #2c3e50;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
-} */
-
-/* Hover effect */
-/* .menu li a:hover {
-  background-color: #e67e22; 
-  color: #000000;
-  transform: scale(1.2); 
-  font-weight: bolder;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
-  border-radius: 20px;
-} */
-
-/* Active button styling */
-/* .menu li a.active {
-  font-size: x-large;
-  background-color: #ffffff; 
-  color: #000000;
-  font-weight: bolder;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
-}
-
-
-.menu li a img {
-  display: flex;
-  justify-content:center;
-  width: 20px; 
-  height: 20px;
-  color: white;
-}
-
-.user-profile {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.user-profile img {
-  width: 40px;
-  border-radius: 50%;
-  color: white;
-} */
-
-/* Sidebar Styles */
-/* .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 250px;
-  background-color:  #fdf4e3; 
-  border-right: 2px solid #333; 
-  display: flex;
-  flex-direction: column;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease; 
-  z-index: 20; 
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  color: #000000; 
-} */
-
-/* Show Sidebar */
-/* .sidebar.show {
-  transform: translateX(0);
-} */
-
-/* Sidebar Header Styles */
-/* .sidebar-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  padding: 20px;
-  font-size: 10px;
-} */
-
-/* Close Button Styles */
-/* .close-sidebar {
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #000000; 
-  transition: color 0.3s ease;
-} */
-
-/* .close-sidebar:hover {
-  color: #007BFF; 
-} */
-
-/* Sidebar Menu Styles */
-/* .sidebar-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex: 1; 
-  display: flex;
-  flex-direction: column;
-  gap: 10px; 
-  overflow-y: auto; 
-}
-
-.sidebar-menu li {
-  padding: 15px 20px;
-}
-
-.sidebar-menu li a {
-  text-decoration: none;
-  color: #000000; 
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.sidebar-menu li a:hover {
-  color: #000000; 
-  background-color: #ff00e1; 
-}
-
-.sidebar-menu li a img {
-  width: 20px;
-  height: 20px;
-  color: black;
-} */
-
-/* Hide sidebar by default */
-/* .sidebar {
-  transform: translateX(-100%);
-} */
-
-/* Sidebar Right */
-/* .sidebar-right {
-  height: 100%;
-  width: 300px; 
-  position: fixed;
-  top: 0;
-  right: -400px; 
-  background-color: #fdf4e3;
-  overflow-x: hidden;
-  transition: right 0.5s ease; 
-  z-index: 1000;
-  padding: 20px;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-}
-
-.sidebar-right.open {
-  right: 0; 
-}
-
-.sidebar-right .closebtn {
-  font-size: 30px;
-  cursor: pointer;
-  color: #333;
-  position: absolute;
-  top: 15px;
-  right: 20px;
-}
-
-.sidebar-content {
-  text-align: center;
-  margin-top: 60px;
-}
-
-.sidebar-content .logo {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.sidebar-content h1 {
-  font-family: 'Comic Sans MS', sans-serif;
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.sidebar-content .avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.sidebar-content h2 {
-  font-family: 'Comic Sans MS', sans-serif;
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.sidebar-content p {
-  font-family: 'Comic Sans MS', sans-serif;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 25px;
-}
-
-.sidebar-content ul {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 30px;
-}
-
-.sidebar-content ul li {
-  font-family: 'Comic Sans MS', sans-serif;
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-.sidebar-content ul li:hover {
-  color: #555;
-}
-
-.logout-btn {
-  background-color: #ff7f7f;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-family: 'Comic Sans MS', sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.logout-btn:hover {
-  background-color: #ff4f4f;
-}
-
-.profile-pic {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-} */
-
-/* Make sure the footer is always at the bottom */
-/* body, html {
-margin: 0;
-padding: 0;
-height: 100%;
-}
-
-body {
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-}
-
-.main-content {
-flex: 1;
-} */
-
 .left-section {
   width: 30%;
   height: 100vh;
@@ -370,7 +20,6 @@ flex: 1;
   flex-direction: column;
 }
 
-/* Assuming 5 buttons */
 button {
   font-size: x-large;
   height: 100px;
@@ -380,7 +29,6 @@ button {
   transition: transform 0.2s, background-color 0.2s;
 }
 
-/* Hover effect */
 button:hover {
   background-color: #0099ff;
   transform: scale(1.05);
@@ -389,7 +37,6 @@ button:hover {
 button img {
   height: 54px;
   width: 54px;
-  /* padding-right: 0px; */
 }
 
 button {
@@ -404,14 +51,12 @@ main {
   flex: 1;
   overflow: hidden;
 }
-.right-side
-{
- display: flex;
- flex-direction: column;
+
+.right-side {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Flip-style digital clock styles */
-/* Futuristic Flip-style digital clock styles */
 .clock {
   position: relative;
   top: 220px;
@@ -437,7 +82,6 @@ main {
   transition: transform 0.6s ease-in-out;
 }
 
-/* Basic styling for the clock */
 .clock {
   display: flex;
   align-items: center;
@@ -446,9 +90,6 @@ main {
 }
 
 .flip-digit {
-  /* position: relative;
-  width: 60px;
-  height: 80px; */
   perspective: 1000px;
   margin: 0 12px;
 }
@@ -476,7 +117,6 @@ main {
   transform: rotateX(180deg);
 }
 
-/* Flip effect */
 .flip-digit.flipping .digit-top {
   transform: rotateX(-180deg);
 }
@@ -485,13 +125,11 @@ main {
   transform: rotateX(0deg);
 }
 
-/* Add shadows and 3D effect */
 .flip-digit {
   position: relative;
   transform-style: preserve-3d;
 }
 
-/* Calendar container styles */
 .calendar-container {
   position: absolute;
   top: 440px;
@@ -557,7 +195,6 @@ main {
   background-color: #ffcccb;
 }
 
-/* SOS button styles */
 .sos-button {
   position: absolute;
   bottom: 520px;
@@ -571,7 +208,7 @@ main {
   border-radius: 100px;
   text-align: center;
   cursor: pointer;
-  
+
 }
 
 .sos-button:hover {

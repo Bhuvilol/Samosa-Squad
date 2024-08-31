@@ -8,16 +8,14 @@
 .bg1 {
     background: url(https://i0.wp.com/wallpapers.com/images/hd/purple-gradient-background-2400-x-2000-84i56bd29161ta0o.jpg?resize=1810%2C2560&ssl=1) no-repeat center center/cover;
 }
+
 section h1 {
     text-align: center;
     font-size: 4rem;
-    /* font-weight: 600; */
-    /* text-decoration: underline; */
-    text-shadow: 3px 3px 6px  rgb(157, 83, 252);
+    text-shadow: 3px 3px 6px rgb(157, 83, 252);
 }
 
 section h1:hover {
-    /* text-shadow: 3px 3px 6px  rgb(135, 79, 255); */
     transform: scale(1.1);
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease,
         box-shadow 0.3s ease, border-radius 0.3s ease;
@@ -30,8 +28,7 @@ section h1:hover {
     align-items: center;
     width: 100vw;
     font-size: 35px;
-    text-shadow: 0.1px 0.1px 3px  rgb(160, 119, 250);
-    /* font-family: "Times New Roman", Times, serif; */
+    text-shadow: 0.1px 0.1px 3px rgb(160, 119, 250);
 }
 
 .intro .para {
@@ -52,9 +49,8 @@ section h1:hover {
     background-color: rgb(34, 10, 65);
     color: rgb(182, 85, 234);
     padding: 20px;
-    /* border: 6px solid rgb(0, 236, 94); */
     box-shadow: 1px 1px 12px 4px rgb(150, 37, 255);
-    text-shadow: 1px 1px 3px  rgb(160, 119, 250);
+    text-shadow: 1px 1px 3px rgb(160, 119, 250);
 }
 
 .intro .pico img {
@@ -66,17 +62,13 @@ section h1:hover {
     height: 80vh;
     width: 80vw;
     margin: 6px;
-    /* background-color: rgb(177, 51, 255); */
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    /* justify-content: space-around; */
     margin-bottom: 50px;
     margin-left: 160px;
 }
 
 .miss {
-    /* background-color: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)); */
     color: rgb(0, 0, 0);
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease,
         box-shadow 0.3s ease, border-radius 0.3s ease;

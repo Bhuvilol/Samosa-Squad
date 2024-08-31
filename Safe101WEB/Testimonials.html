@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe101-Testimonials</title>
+    <!-- <link rel="icon" type="image/x-icon" href="Logo.png"> -->
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="Testimonials.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Patrick+Hand" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="hamburger-menu">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/menu.png" alt="Menu">
+                </div>
+                &nbsp &nbsp
+                <div class="logo">
+                    <img src="images/Logo.png" alt="Safe101 Logo">
+                    <h1>Safe101</h1>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="Home.html"><img src="https://img.icons8.com/material-outlined/24/000000/home.png"
+                            alt="Home"> Home</a></li>
+                <li><a href="About.html"><img src="https://img.icons8.com/material-outlined/24/000000/info.png"
+                            alt="About"> About</a></li>
+                <li><a href="Features.html"><img src="https://img.icons8.com/material-outlined/24/000000/settings.png"
+                            alt="Features"> Features</a></li>
+                <li><a href="Services.html"><img src="https://img.icons8.com/material-outlined/24/000000/groups.png"
+                            alt="Services"> Services</a></li>
+                <li><a href="Contact.html"><img src="https://img.icons8.com/material-outlined/24/000000/help.png"
+                            alt="Contact"> Contact</a></li>
+            </ul>
+            <div class="user-profile" id="profile-pic">
+                <img src="https://cdn2.iconfinder.com/data/icons/circle-avatars-1/128/050_girl_avatar_profile_woman_suit_student_officer-512.png"
+                    alt="User">
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Right Sidebar (Profile) -->
+    <div id="sidebar-right" class="sidebar-right">
+        <span class="closebtn" id="close-sidebar">&times;</span>
+        <div class="sidebar-content">
+            <img src="images/Logo.png" alt="Safe101 Logo" class="logo">
+            <h1>Safe101</h1>
+            <img src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" alt="User Avatar"
+                class="avatar">
+            <h2>Mamta Modi</h2>
+            <p>9876xxxxxxx</p>
+            <ul>
+                <li><a href="EditProfile.html">Edit Profile</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="Friendslist.html">Friends list</a></li>
+                <li><a href="RateUs.html">Rate us</a></li>
+            </ul>
+            <button class="logout-btn" onclick="logout()">LOGOUT</button>
+        </div>
+    </div>
+
+    <!-- Sidebar Code -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="images/Logo.png" alt="Safe101 Logo" />
+                <h1 style="font-size: 30px">Safe101</h1>
+            </div>
+            <button class="close-sidebar">&times;</button>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="Home.html"><img src="https://img.icons8.com/material-outlined/24/000000/home.png" alt="Home" />
+                    Home</a>
+            </li>
+            <li>
+                <a href="Settings.html"><img src="https://img.icons8.com/material-outlined/24/000000/settings.png"
+                        alt="Settings" /> Settings</a>
+            </li>
+            <li>
+                <a href="FeedBack.html"><img src="https://img.icons8.com/material-outlined/24/000000/feedback.png"
+                        alt="Feedback" /> Feedback</a>
+            </li>
+            <li>
+                <a href="Testimonials.html"><img src="https://img.icons8.com/material-outlined/24/000000/star.png"
+                        alt="Testimonials" /> Testimonials</a>
+            </li>
+            <li>
+                <a href="Organisation.html"><img
+                        src="https://img.icons8.com/material-outlined/24/000000/organization.png" alt="Organisation" />
+                    Organisation</a>
+            </li>
+            <li>
+                <a href="Services.html"><img src="https://img.icons8.com/material-outlined/24/000000/groups.png"
+                        alt="Services" /> Services</a>
+            </li>
+            <li>
+                <a href="Careers.html"><img src="https://img.icons8.com/material-outlined/24/000000/briefcase.png"
+                        alt="Careers" /> Careers</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <main class="bg1">
+        <section class="intro">
+            <h2 style="font-size: 3em; text-shadow: 0.1px 0.1px 2px  #6032bb;">Our Community Speaks</h2>
+            <p style="font-size: 1.3em;">Discover how Safe101 has impacted the lives of women across the world. Here’s
+                what our users have to say
+                about their experiences with our app.</p>
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonial-card">
+                <img src="data:image/jpeg;base64,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"
+                    alt="User 1">
+                <div class="testimonial-content">
+                    <h3>Kavya Maran</h3>
+                    <p>"Safe101 has been a game-changer for me. The emergency alert feature gives me peace of mind when
+                        I’m out alone."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1i0qgpuT8SP-4McqF24sh8yzuYxN0_yY4w&s"
+                    alt="User 2">
+                <div class="testimonial-content">
+                    <h3>Tanisha Gupta</h3>
+                    <p>"I love the community support aspect of Safe101. It makes me feel connected and empowered to stay
+                        safe."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://img.freepik.com/premium-photo/indian-college-young-girl-going-college_437792-232.jpg"
+                    alt="User 3">
+                <div class="testimonial-content">
+                    <h3>Surbhi Sinde</h3>
+                    <p>"The app is easy to use and the safety tips are very helpful. It’s an essential tool for every
+                        woman."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://img.freepik.com/free-photo/closeup-happy-pretty-indian-business-woman_1262-2258.jpg"
+                    alt="User 4">
+                <div class="testimonial-content">
+                    <h3>Priyanka Reddy</h3>
+                    <p>"Safe101 made me feel more secure when traveling. The real-time location sharing feature is
+                        fantastic."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="data:image/jpeg;base64,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"
+                    alt="User 5">
+                <div class="testimonial-content">
+                    <h3>Haziba Khan</h3>
+                    <p>"I highly recommend Safe101 to all my friends. It’s a must-have app for women’s safety."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://i.pinimg.com/736x/6f/9a/e7/6f9ae7cc5e0a10b2c5442740065f4937.jpg" alt="User 6">
+                <div class="testimonial-content">
+                    <h3>Manpreet Kaur</h3>
+                    <p>"Safe101 has given me the confidence to go out and explore new places without fear."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://image.tensorartassets.com/cdn-cgi/image/anim=false,plain=false,w=2048,f=jpeg,q=85/posts/images/685895007449665985/fd6ca9f8-6f16-477a-bebf-fbf801daa73c.jpg"
+                    alt="User 7">
+                <div class="testimonial-content">
+                    <h3>Daisy D Souza</h3>
+                    <p>"The app’s interface is user-friendly, and I appreciate the regular updates with new features."
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://image.tmdb.org/t/p/original/oNdQeuoJk7kNjAHZd4vEcedC7yY.jpg" alt="User 8">
+                <div class="testimonial-content">
+                    <h3>Chandrika Bhide</h3>
+                    <p>"Safe101 has been a vital tool in ensuring my sister's safety. It's incredibly reliable."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://img.freepik.com/premium-photo/beautiful-south-indian-female-college-student-without-anyone-else-blurred-background_878783-7185.jpg?w=360"
+                    alt="User 9">
+                <div class="testimonial-content">
+                    <h3>Sonalika Gada</h3>
+                    <p>"I love how Safe101 has built a supportive community. It’s not just an app; it’s a movement."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp0CLgZ2NCRRHTijtpRNQFUhc6xgeQSrp3JA&s"
+                    alt="User 10">
+                <div class="testimonial-content">
+                    <h3>Anjali Iyer</h3>
+                    <p>"The safety features are excellent, and I feel much more secure knowing I have Safe101 on my
+                        phone."</p>
+                </div>
+            </div>
+
+
+            <div class="testimonial-card">
+                <img src="https://img.freepik.com/premium-photo/smiling-nepali-girl-red-kurta_85216-150.jpg"
+                    alt="User 11">
+                <div class="testimonial-content">
+                    <h3>Priya Kapoor</h3>
+                    <p>"Safe101 is a lifesaver! The quick SOS feature helped me alert my family instantly during a
+                        stressful situation. I'm so thankful for this app."</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://img.freepik.com/premium-photo/captivating-marathi-girl-traditional-attire-dynamic-essence-maharashtra_878783-14731.jpg"
+                    alt="User 12">
+                <div class="testimonial-content">
+                    <h3>Sneha Patel</h3>
+                    <p>"I love how easy it is to share my location with trusted contacts. Safe101 makes me feel safer
+                        when I’m out jogging early in the morning."</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://img.freepik.com/premium-photo/indian-college-young-girl-going-college_437792-234.jpg"
+                    alt="User 13">
+                <div class="testimonial-content">
+                    <h3>Meera Sharma</h3>
+                    <p>"The emergency contacts feature gives me peace of mind. I know that help is just a tap away,
+                        thanks to Safe101."</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://cdn.pixabay.com/photo/2024/02/12/17/23/ai-generated-8569065_1280.jpg" alt="User 14">
+                <div class="testimonial-content">
+                    <h3>Anita Desai</h3>
+                    <p>"The community forum on Safe101 has been so supportive. It’s great to connect with other women
+                        who share safety tips and advice."</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://makepix.b-cdn.net/makepix_75a66792-dac0-4e7f-9d94-533ad841d498/a-south-indian-women-d0e67ded_0_m.webp"
+                    alt="User 15">
+                <div class="testimonial-content">
+                    <h3>Neha Verma</h3>
+                    <p>"Safe101 is a must-have app for every woman. The app’s features are well thought out and provide
+                        a sense of security wherever I go."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Logo.png" alt="SAFE101 Logo">
+                <h2>SAFE101</h2>
+                <p>SAFE101 is an innovative app that uses cutting-edge technology to ensure the user's safety at all
+                    times. This app makes safety within every woman’s reach.</p>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Features.html">Features</a></li>
+                    <li><a href="Blogs.html">Blogs</a></li>
+                    <li><a href="Help.html">Help</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-connect">
+                &nbsp
+                <br><br>
+                <p>India: +91 6969696969</p>
+                <p>Email: <a href="mailto:info@safe101.app">info@safe101.app</a></p>
+            </div>
+
+            <div class="footer-download">
+                <h3>Download now</h3>
+                <div>
+                    <a href="#"><img
+                            src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+                            alt="Play Store" height="65vh" width="165vw" />
+                    </a>
+                    <a href="#"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8JWN0o1lukA7fuFuxCw53m_sx0haKyKBqg&s"
+                            alt="Play Store" height="45vh" width="145vw" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer Policy</a></li>
+                <li><a href="#">Refund and Cancellation Policy</a></li>
+                <li><a href="#">Shipping & Delivery Policy</a></li>
+            </ul>
+            <p>Copyright © 2024 SAFE101 Pty Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="Base.js"></script>
+</body>
+
+</html>

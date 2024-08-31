@@ -1,0 +1,352 @@
+* {
+    font-family: "Patrick Hand";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+}
+
+body {
+    overflow-x: hidden;   
+    width: 99vw;
+}
+
+.bg1 {
+    background: url(https://wallpapercave.com/wp/2IiBThV.jpg) no-repeat center center/cover;
+}
+
+.bg {
+    background-image: url(https://wallpapercave.com/wp/EUUoCAC.jpg);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 150px 0px 0px;
+}
+
+.image-container img {
+    width: 145vw;
+    height: 80vh;
+    border-radius: 15px;
+}
+
+.text-container {
+    margin-top: 10px;
+    height: 100vh;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.here {
+    color: #00bbff;
+    text-decoration: none;
+}
+
+.here:hover {
+    text-decoration: underline;
+}
+
+.container {
+
+    text-align: center;
+}
+
+.container1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.how-different-section {
+    display: flex;
+    
+
+}
+
+.how-different-section h1 {
+    font-size: 46px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #ff007f;
+    /* Pinkish highlight */
+}
+
+.description {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #e4e4e4;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    flex: 1;
+    /* min-width: 250px;
+    max-width: 30%; */
+    width: 30vw;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.feature-box img {
+    width: 180px;
+    border-radius: 9px;
+}
+.ft1 img
+{
+ margin-bottom: 50px;
+}
+
+.ft2 img
+{
+
+    margin-bottom: 80px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.how-it-works {
+    text-align: center;
+    padding: 50px;
+}
+
+.how-it-works h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.how-it-works h1 span {
+    color: #ff4081;
+}
+
+.how-it-works p {
+    font-size: 1.9em;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.steps {
+    text-align: left;
+    max-width: 400px;
+}
+
+.steps ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 1.7em;
+    color: #333;
+}
+
+.steps li {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.steps li span {
+    color: #ff4081;
+    /* Pink color */
+    font-weight: bold;
+}
+
+.faq-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.faq-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.faq-section h1 span {
+    color: #ff4081;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.faq-image img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 40px;
+}
+
+.faq-accordion {
+    max-width: 500px;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 15px 0;
+    cursor: pointer;
+    color: #333;
+    outline: none;
+    position: relative;
+}
+
+.faq-answer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    padding-left: 20px;
+}
+
+.faq-answer p {
+    color: #666;
+    font-size: 1em;
+    margin: 0;
+}
+
+.faq-item.faq-open .faq-answer {
+    height: auto;
+}
+
+.faq-question::after {
+    content: '▼';
+    font-size: 1.2em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq-item.faq-open .faq-question::after {
+    content: '▲';
+}
+
+.newsletter-section {
+    padding: 50px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.newsletter-section h1 span {
+    color: #ff4081;
+}
+.newsletter-section p {
+    font-size: 1.8em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"],
+.newsletter-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1.2em;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.newsletter-form button {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff007f;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    /* transition: background-color 0.3s; */
+}
+
+.newsletter-form button:hover {
+    background-color: #d80b71;
+}
+
+.recaptcha button {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #a3a3a3;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: #eee;
+    border-radius: 25px;
+}
+
+.recaptcha button:hover {
+    background-color: #666;
+}

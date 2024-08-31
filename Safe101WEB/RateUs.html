@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RateUs.css">
+    <title>Safe101 Rating Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/Logo.png" alt="Safe101 Logo" class="logo">
+        <div id="blur-background" class="blur-background hidden"></div>
+        <div id="rating-container" class="rating-container">
+            <h1>Rate Us</h1>
+            <div class="rating-group">
+                <h2>Overall Experience</h2>
+                <div class="star-rating">
+                    <input type="radio" name="overall-rating" id="overall-rating-5" value="5">
+                    <label for="overall-rating-5">★</label>
+                    <input type="radio" name="overall-rating" id="overall-rating-4" value="4">
+                    <label for="overall-rating-4">★</label>
+                    <input type="radio" name="overall-rating" id="overall-rating-3" value="3">
+                    <label for="overall-rating-3">★</label>
+                    <input type="radio" name="overall-rating" id="overall-rating-2" value="2">
+                    <label for="overall-rating-2">★</label>
+                    <input type="radio" name="overall-rating" id="overall-rating-1" value="1">
+                    <label for="overall-rating-1">★</label>
+                </div>
+            </div>
+            <div class="rating-group">
+                <h2>Website Ease</h2>
+                <div class="star-rating">
+                    <input type="radio" name="ease-rating" id="ease-rating-5" value="5">
+                    <label for="ease-rating-5">★</label>
+                    <input type="radio" name="ease-rating" id="ease-rating-4" value="4">
+                    <label for="ease-rating-4">★</label>
+                    <input type="radio" name="ease-rating" id="ease-rating-3" value="3">
+                    <label for="ease-rating-3">★</label>
+                    <input type="radio" name="ease-rating" id="ease-rating-2" value="2">
+                    <label for="ease-rating-2">★</label>
+                    <input type="radio" name="ease-rating" id="ease-rating-1" value="1">
+                    <label for="ease-rating-1">★</label>
+                </div>
+            </div>
+            <div class="rating-group">
+                <h2>Website Usability</h2>
+                <div class="star-rating">
+                    <input type="radio" name="usability-rating" id="usability-rating-5" value="5">
+                    <label for="usability-rating-5">★</label>
+                    <input type="radio" name="usability-rating" id="usability-rating-4" value="4">
+                    <label for="usability-rating-4">★</label>
+                    <input type="radio" name="usability-rating" id="usability-rating-3" value="3">
+                    <label for="usability-rating-3">★</label>
+                    <input type="radio" name="usability-rating" id="usability-rating-2" value="2">
+                    <label for="usability-rating-2">★</label>
+                    <input type="radio" name="usability-rating" id="usability-rating-1" value="1">
+                    <label for="usability-rating-1">★</label>
+                </div>
+            </div>
+            <!-- Add more rating groups here if needed -->
+            <button class="submit-button" onclick="submitRating()">Submit</button>
+        </div>
+        <div id="popup-card" class="popup-card">
+            <p id="popup-message"></p>
+            <div class="popup-buttons">
+                <button class="home-icon" onclick="goHome()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6.364 6.364a.5.5 0 0 1-.708.708l-1.819-1.819V14a.5.5 0 0 1-.5.5h-2.5a.5.5 0 0 1-.5-.5V9.5H6v4.5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V8.546L.707 10.365a.5.5 0 0 1-.707-.708l6.364-6.364a1 1 0 0 1 1.414 0z" />
+                    </svg>
+                    Home
+                </button>
+                <button class="logout-icon" onclick="logout()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5 1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h-1V1a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2H5V1zm6 4V1H5v4H2v1h12V5h-3zM1 5v6a2 2 0 0 0 2 2h1v-1H3a1 1 0 0 1-1-1V6h12v4a1 1 0 0 1-1 1h-1v1h1a2 2 0 0 0 2-2V5H1z" />
+                    </svg>
+                    Logout
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function submitRating() {
+            const overallRating = getRating('overall-rating');
+            const easeRating = getRating('ease-rating');
+            const usabilityRating = getRating('usability-rating');
+            // Add more ratings here if needed
+
+            const allRatings = [overallRating, easeRating, usabilityRating];
+            const allAboveThree = allRatings.every(rating => rating >= 3);
+
+            const popupMessage = document.getElementById('popup-message');
+            const ratingContainer = document.getElementById('rating-container');
+            const blurBackground = document.getElementById('blur-background');
+            const popupCard = document.getElementById('popup-card');
+
+            if (allAboveThree) {
+                popupMessage.textContent = 'Thank you for your feedback!';
+            } else {
+                popupMessage.textContent = 'We will try our best to improve.';
+            }
+
+            ratingContainer.classList.add('hidden');
+            blurBackground.classList.remove('hidden');
+            popupCard.style.display = 'block';
+        }
+
+        function getRating(ratingName) {
+            const ratingInputs = document.getElementsByName(ratingName);
+            let rating = 0;
+            for (let i = ratingInputs.length - 1; i >= 0; i--) {
+                if (ratingInputs[i].checked) {
+                    rating = parseInt(ratingInputs[i].value);
+                    break;
+                }
+            }
+            return rating;
+        }
+
+        function closePopup() {
+            const ratingContainer = document.getElementById('rating-container');
+            const blurBackground = document.getElementById('blur-background');
+            const popupCard = document.getElementById('popup-card');
+
+            ratingContainer.classList.remove('hidden');
+            blurBackground.classList.add('hidden');
+            popupCard.style.display = 'none';
+        }
+
+        function goHome() {
+            window.location.href = 'home.html'; // Change to your actual home page URL
+        }
+
+        function logout() {
+            window.location.href = 'LoginPage.html'; // Change to your actual logout URL
+        }
+    </script>
+</body>
+
+</html>

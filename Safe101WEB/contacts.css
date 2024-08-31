@@ -1,0 +1,114 @@
+* {
+    font-family: "Patrick Hand";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #d2d2d2;
+    margin: 0;
+    padding: 0;
+    background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+}
+
+.container {
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto; /* Center container */
+    padding: 20px 30px 40px 30px;
+    background-color: rgb(248, 240, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure container is full width */
+}
+
+h1 {
+    text-align: center;
+    color: #774ecb;
+    text-shadow: 0.1px 0.1px 2px #6032bb;
+    font-size: 2.3em;
+    margin-bottom: 60px;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px;
+    padding: 0; /* Remove padding for full-width */
+    margin: 0; /* Remove margin for full-width */
+}
+
+.contact-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    justify-content: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Make sure it fills the grid cell */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    /* border: 2px solid palevioletred; */
+    box-shadow: 0px 1px 10px #7a37ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+}
+
+.contact-box img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #9966ff;
+    box-shadow: 0px 1px 10px #7a37ff;
+}
+
+.contact-box h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.contact-box p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+@media (max-width: 1200px) {
+    .contacts-grid {
+        grid-template-columns: repeat(4, 1fr); /* Adjust to 4 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts-grid {
+        grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contacts-grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+
+    .contact-box img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-box h3 {
+        font-size: 1em;
+    }
+
+    .contact-box p {
+        font-size: 0.8em;
+    }
+}
+

@@ -1,0 +1,154 @@
+* {
+    font-family: "Patrick Hand";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+}
+
+.settings-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bg1 {
+    background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px  rgb(173, 41, 255);
+}
+
+.settings-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.tab-button {
+    background-color: #885aff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s, transform 0.3s;
+    text-shadow: 0.1px 0.1px 1px  rgb(0, 0, 0);
+    margin: 0px 5px;
+}
+
+.tab-button:hover {
+    background-color: #4a13a3;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.tab-button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+    font-size: 1.1em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group input[type="color"],
+.form-group select,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+#contact-list {
+    margin-top: 20px;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item strong {
+    display: block;
+    font-size: 1.2em;
+    color: #333333;
+}
+
+.contact-item p {
+    color: #666666;
+    margin: 5px 0;
+}

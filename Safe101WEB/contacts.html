@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe101-Contacts</title>
+    <!-- <link rel="icon" type="image/x-icon" href="Logo.png" /> -->
+    <link rel="stylesheet" href="contacts.css" />
+    <link rel="stylesheet" href="Navbar.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Patrick+Hand" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="hamburger-menu">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/menu.png" alt="Menu" />
+                </div>
+                &nbsp &nbsp
+                <div class="logo">
+                    <img src="images/Logo.png" alt="Safe101 Logo" />
+                    <h1>Safe101</h1>
+                </div>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="Home.html"><img src="https://img.icons8.com/material-outlined/24/000000/home.png"
+                            alt="Home" />Home</a>
+                </li>
+                <li>
+                    <a href="About.html"><img src="https://img.icons8.com/material-outlined/24/000000/info.png"
+                            alt="About" />About</a>
+                </li>
+                <li>
+                    <a href="Features.html"><img src="https://img.icons8.com/material-outlined/24/000000/settings.png"
+                            alt="Features" />Features</a>
+                </li>
+                <li>
+                    <a href="Blogs.html"><img src="https://img.icons8.com/material-outlined/24/000000/document.png"
+                            alt="Blogs" />Blogs</a>
+                </li>
+                <li>
+                    <a href="Contact.html"><img src="https://img.icons8.com/material-outlined/24/000000/help.png"
+                            alt="Contact" />Contact</a>
+                </li>
+            </ul>
+            <div class="user-profile" id="profile-pic">
+                <img src="https://cdn2.iconfinder.com/data/icons/circle-avatars-1/128/050_girl_avatar_profile_woman_suit_student_officer-512.png"
+                    alt="User" />
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar Code -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="Logo.png" alt="Safe101 Logo" />
+                <h1 style="font-size: 30px">Safe101</h1>
+            </div>
+            <button class="close-sidebar">&times;</button>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="Home.html"><img src="https://img.icons8.com/material-outlined/24/000000/home.png" alt="Home" />
+                    Home</a>
+            </li>
+            <li>
+                <a href="Settings.html"><img src="https://img.icons8.com/material-outlined/24/000000/settings.png"
+                        alt="Settings" /> Settings</a>
+            </li>
+            <li>
+                <a href="FeedBack.html"><img src="https://img.icons8.com/material-outlined/24/000000/feedback.png"
+                        alt="Feedback" /> Feedback</a>
+            </li>
+            <li>
+                <a href="Testimonials.html"><img src="https://img.icons8.com/material-outlined/24/000000/star.png"
+                        alt="Testimonials" /> Testimonials</a>
+            </li>
+            <li>
+                <a href="Organisation.html"><img
+                        src="https://img.icons8.com/material-outlined/24/000000/organization.png" alt="Organisation" />
+                    Organisation</a>
+            </li>
+            <li>
+                <a href="Services.html"><img src="https://img.icons8.com/material-outlined/24/000000/groups.png"
+                        alt="Services" /> Services</a>
+            </li>
+            <li>
+                <a href="Careers.html"><img src="https://img.icons8.com/material-outlined/24/000000/briefcase.png"
+                        alt="Careers" /> Careers</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Right Sidebar (Profile) -->
+    <div id="sidebar-right" class="sidebar-right">
+        <span class="closebtn" id="close-sidebar">&times;</span>
+        <div class="sidebar-content">
+            <img src="images/Logo.png" alt="Safe101 Logo" class="logo">
+            <h1>Safe101</h1>
+            <img src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" alt="User Avatar"
+                class="avatar">
+            <h2>Mamta Modi</h2>
+            <p>9876xxxxxxx</p>
+            <ul>
+                <li><a href="EditProfile.html">Edit Profile</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="Friendslist.html">Friends list</a></li>
+                <li><a href="RateUs.html">Rate us</a></li>
+            </ul>
+            <button class="logout-btn" onclick="logout()">LOGOUT</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Emergency Contacts</h1>
+        <div class="contacts-grid">
+
+
+            <div class="contacts-grid">
+                <!-- Contact 4 -->
+                <div class="contact-box">
+                    <img src="https://img.freepik.com/premium-photo/stunning-stylish-indian-girl-with-beautiful-sari-ai-generated_874192-2436.jpg?w=740"
+                        alt="Neha Patil">
+                    <h3>Neha Patil</h3>
+                    <p>Email: neha.patil@example.com</p>
+                    <p>Phone: 9876543213</p>
+                    <p>Location: Pune</p>
+                </div>
+                <!-- Contact 5 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Pooja Singh">
+                    <h3>Pooja Singh</h3>
+                    <p>Email: pooja.singh@example.com</p>
+                    <p>Phone: 9876543214</p>
+                    <p>Location: Chennai</p>
+                </div>
+                <!-- Contact 6 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Shreya Gupta">
+                    <h3>Shreya Gupta</h3>
+                    <p>Email: shreya.gupta@example.com</p>
+                    <p>Phone: 9876543215</p>
+                    <p>Location: Bangalore</p>
+                </div>
+                <!-- Contact 7 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Aarti Yadav">
+                    <h3>Aarti Yadav</h3>
+                    <p>Email: aarti.yadav@example.com</p>
+                    <p>Phone: 9876543216</p>
+                    <p>Location: Jaipur</p>
+                </div>
+                <!-- Contact 8 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Ritu Kaur">
+                    <h3>Ritu Kaur</h3>
+                    <p>Email: ritu.kaur@example.com</p>
+                    <p>Phone: 9876543217</p>
+                    <p>Location: Chandigarh</p>
+                </div>
+                <!-- Contact 9 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Priya Joshi">
+                    <h3>Priya Joshi</h3>
+                    <p>Email: priya.joshi@example.com</p>
+                    <p>Phone: 9876543218</p>
+                    <p>Location: Hyderabad</p>
+                </div>
+                <!-- Contact 10 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Simran Mehta">
+                    <h3>Simran Mehta</h3>
+                    <p>Email: simran.mehta@example.com</p>
+                    <p>Phone: 9876543219</p>
+                    <p>Location: Ahmedabad</p>
+                </div>
+                <!-- Contact 11 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Anjali Kapoor">
+                    <h3>Anjali Kapoor</h3>
+                    <p>Email: anjali.kapoor@example.com</p>
+                    <p>Phone: 9876543220</p>
+                    <p>Location: Surat</p>
+                </div>
+                <!-- Contact 12 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Mansi Desai">
+                    <h3>Mansi Desai</h3>
+                    <p>Email: mansi.desai@example.com</p>
+                    <p>Phone: 9876543221</p>
+                    <p>Location: Nashik</p>
+                </div>
+                <!-- Contact 13 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Ishita Chauhan">
+                    <h3>Ishita Chauhan</h3>
+                    <p>Email: ishita.chauhan@example.com</p>
+                    <p>Phone: 9876543222</p>
+                    <p>Location: Indore</p>
+                </div>
+                <!-- Contact 14 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Roshni Patel">
+                    <h3>Roshni Patel</h3>
+                    <p>Email: roshni.patel@example.com</p>
+                    <p>Phone: 9876543223</p>
+                    <p>Location: Vadodara</p>
+                </div>
+                <!-- Contact 15 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Shruti Nair">
+                    <h3>Shruti Nair</h3>
+                    <p>Email: shruti.nair@example.com</p>
+                    <p>Phone: 9876543224</p>
+                    <p>Location: Thane</p>
+                </div>
+                <!-- Contact 16 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Nidhi Bhatia">
+                    <h3>Nidhi Bhatia</h3>
+                    <p>Email: nidhi.bhatia@example.com</p>
+                    <p>Phone: 9876543225</p>
+                    <p>Location: Bhopal</p>
+                </div>
+                <!-- Contact 17 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Megha Sharma">
+                    <h3>Megha Sharma</h3>
+                    <p>Email: megha.sharma@example.com</p>
+                    <p>Phone: 9876543226</p>
+                    <p>Location: Lucknow</p>
+                </div>
+                <!-- Contact 18 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Ayesha Sheikh">
+                    <h3>Ayesha Sheikh</h3>
+                    <p>Email: ayesha.sheikh@example.com</p>
+                    <p>Phone: 9876543227</p>
+                    <p>Location: Kanpur</p>
+                </div>
+                <!-- Contact 19 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Sana Rizvi">
+                    <h3>Sana Rizvi</h3>
+                    <p>Email: sana.rizvi@example.com</p>
+                    <p>Phone: 9876543228</p>
+                    <p>Location: Nagpur</p>
+                </div>
+                <!-- Contact 20 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Lavanya Reddy">
+                    <h3>Lavanya Reddy</h3>
+                    <p>Email: lavanya.reddy@example.com</p>
+                    <p>Phone: 9876543229</p>
+                    <p>Location: Visakhapatnam</p>
+                </div>
+                <!-- Contact 21 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Smriti Rao">
+                    <h3>Smriti Rao</h3>
+                    <p>Email: smriti.rao@example.com</p>
+                    <p>Phone: 9876543230</p>
+                    <p>Location: Kochi</p>
+                </div>
+                <!-- Contact 22 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Rhea Kapoor">
+                    <h3>Rhea Kapoor</h3>
+                    <p>Email: rhea.kapoor@example.com</p>
+                    <p>Phone: 9876543231</p>
+                    <p>Location: Coimbatore</p>
+                </div>
+                <!-- Contact 23 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Nisha Jain">
+                    <h3>Nisha Jain</h3>
+                    <p>Email: nisha.jain@example.com</p>
+                    <p>Phone: 9876543232</p>
+                    <p>Location: Madurai</p>
+                </div>
+                <!-- Contact 24 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Ankita Das">
+                    <h3>Ankita Das</h3>
+                    <p>Email: ankita.das@example.com</p>
+                    <p>Phone: 9876543233</p>
+                    <p>Location: Patna</p>
+                </div>
+                <!-- Contact 25 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Juhi Bhatt">
+                    <h3>Juhi Bhatt</h3>
+                    <p>Email: juhi.bhatt@example.com</p>
+                    <p>Phone: 9876543234</p>
+                    <p>Location: Varanasi</p>
+                </div>
+                <!-- Contact 26 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Kavita Roy">
+                    <h3>Kavita Roy</h3>
+                    <p>Email: kavita.roy@example.com</p>
+                    <p>Phone: 9876543235</p>
+                    <p>Location: Meerut</p>
+                </div>
+                <!-- Contact 27 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Rashi Gupta">
+                    <h3>Rashi Gupta</h3>
+                    <p>Email: rashi.gupta@example.com</p>
+                    <p>Phone: 9876543236</p>
+                    <p>Location: Faridabad</p>
+                </div>
+                <!-- Contact 28 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Sneha Agrawal">
+                    <h3>Sneha Agrawal</h3>
+                    <p>Email: sneha.agrawal@example.com</p>
+                    <p>Phone: 9876543237</p>
+                    <p>Location: Ranchi</p>
+                </div>
+                <!-- Contact 29 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Trisha Kapoor">
+                    <h3>Trisha Kapoor</h3>
+                    <p>Email: trisha.kapoor@example.com</p>
+                    <p>Phone: 9876543238</p>
+                    <p>Location: Raipur</p>
+                </div>
+                <!-- Contact 30 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Aishwarya Rai">
+                    <h3>Aishwarya Rai</h3>
+                    <p>Email: aishwarya.rai@example.com</p>
+                    <p>Phone: 9876543239</p>
+                    <p>Location: Guwahati</p>
+                </div>
+                <!-- Contact 31 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Meena Gupta">
+                    <h3>Meena Gupta</h3>
+                    <p>Email: meena.gupta@example.com</p>
+                    <p>Phone: 9876543240</p>
+                    <p>Location: Dehradun</p>
+                </div>
+                <!-- Contact 32 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Komal Agrawal">
+                    <h3>Komal Agrawal</h3>
+                    <p>Email: komal.agrawal@example.com</p>
+                    <p>Phone: 9876543241</p>
+                    <p>Location: Ludhiana</p>
+                </div>
+                <!-- Contact 33 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Tanya Jain">
+                    <h3>Tanya Jain</h3>
+                    <p>Email: tanya.jain@example.com</p>
+                    <p>Phone: 9876543242</p>
+                    <p>Location: Allahabad</p>
+                </div>
+                <!-- Contact 34 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Sonal Mehta">
+                    <h3>Sonal Mehta</h3>
+                    <p>Email: sonal.mehta@example.com</p>
+                    <p>Phone: 9876543243</p>
+                    <p>Location: Amritsar</p>
+                </div>
+                <!-- Contact 35 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Kritika Roy">
+                    <h3>Kritika Roy</h3>
+                    <p>Email: kritika.roy@example.com</p>
+                    <p>Phone: 9876543244</p>
+                    <p>Location: Jodhpur</p>
+                </div>
+                <!-- Contact 36 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Vandana Arora">
+                    <h3>Vandana Arora</h3>
+                    <p>Email: vandana.arora@example.com</p>
+                    <p>Phone: 9876543245</p>
+                    <p>Location: Kota</p>
+                </div>
+                <!-- Contact 37 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Swati Gupta">
+                    <h3>Swati Gupta</h3>
+                    <p>Email: swati.gupta@example.com</p>
+                    <p>Phone: 9876543246</p>
+                    <p>Location: Gwalior</p>
+                </div>
+                <!-- Contact 38 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Nandini Sinha">
+                    <h3>Nandini Sinha</h3>
+                    <p>Email: nandini.sinha@example.com</p>
+                    <p>Phone: 9876543247</p>
+                    <p>Location: Bhubaneswar</p>
+                </div>
+                <!-- Contact 39 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Ritika Jain">
+                    <h3>Ritika Jain</h3>
+                    <p>Email: ritika.jain@example.com</p>
+                    <p>Phone: 9876543248</p>
+                    <p>Location: Jamshedpur</p>
+                </div>
+                <!-- Contact 40 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Sakshi Singh">
+                    <h3>Sakshi Singh</h3>
+                    <p>Email: sakshi.singh@example.com</p>
+                    <p>Phone: 9876543249</p>
+                    <p>Location: Srinagar</p>
+                </div>
+                <!-- Contact 41 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Isha Thakur">
+                    <h3>Isha Thakur</h3>
+                    <p>Email: isha.thakur@example.com</p>
+                    <p>Phone: 9876543250</p>
+                    <p>Location: Shimla</p>
+                </div>
+                <!-- Contact 42 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Aditi Sharma">
+                    <h3>Aditi Sharma</h3>
+                    <p>Email: aditi.sharma@example.com</p>
+                    <p>Phone: 9876543251</p>
+                    <p>Location: Udaipur</p>
+                </div>
+                <!-- Contact 43 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Divya Nair">
+                    <h3>Divya Nair</h3>
+                    <p>Email: divya.nair@example.com</p>
+                    <p>Phone: 9876543252</p>
+                    <p>Location: Mysore</p>
+                </div>
+                <!-- Contact 44 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Prachi Jain">
+                    <h3>Prachi Jain</h3>
+                    <p>Email: prachi.jain@example.com</p>
+                    <p>Phone: 9876543253</p>
+                    <p>Location: Pondicherry</p>
+                </div>
+                <!-- Contact 45 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Madhuri Iyer">
+                    <h3>Madhuri Iyer</h3>
+                    <p>Email: madhuri.iyer@example.com</p>
+                    <p>Phone: 9876543254</p>
+                    <p>Location: Panaji</p>
+                </div>
+                <!-- Contact 46 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Sonal Desai">
+                    <h3>Sonal Desai</h3>
+                    <p>Email: sonal.desai@example.com</p>
+                    <p>Phone: 9876543255</p>
+                    <p>Location: Siliguri</p>
+                </div>
+                <!-- Contact 47 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Geeta Pillai">
+                    <h3>Geeta Pillai</h3>
+                    <p>Email: geeta.pillai@example.com</p>
+                    <p>Phone: 9876543256</p>
+                    <p>Location: Agartala</p>
+                </div>
+                <!-- Contact 48 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Richa Dubey">
+                    <h3>Richa Dubey</h3>
+                    <p>Email: richa.dubey@example.com</p>
+                    <p>Phone: 9876543257</p>
+                    <p>Location: Warangal</p>
+                </div>
+                <!-- Contact 49 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Parul Singh">
+                    <h3>Parul Singh</h3>
+                    <p>Email: parul.singh@example.com</p>
+                    <p>Phone: 9876543258</p>
+                    <p>Location: Solapur</p>
+                </div>
+                <!-- Contact 50 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Ananya Das">
+                    <h3>Ananya Das</h3>
+                    <p>Email: ananya.das@example.com</p>
+                    <p>Phone: 9876543259</p>
+                    <p>Location: Raigarh</p>
+                </div>
+                <!-- Contact 51 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Neha Sinha">
+                    <h3>Neha Sinha</h3>
+                    <p>Email: neha.sinha@example.com</p>
+                    <p>Phone: 9876543260</p>
+                    <p>Location: Jalandhar</p>
+                </div>
+                <!-- Contact 52 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Amrita Kaur">
+                    <h3>Amrita Kaur</h3>
+                    <p>Email: amrita.kaur@example.com</p>
+                    <p>Phone: 9876543261</p>
+                    <p>Location: Kolhapur</p>
+                </div>
+                <!-- Contact 53 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Sujata Roy">
+                    <h3>Sujata Roy</h3>
+                    <p>Email: sujata.roy@example.com</p>
+                    <p>Phone: 9876543262</p>
+                    <p>Location: Amravati</p>
+                </div>
+                <!-- Contact 54 -->
+                <div class="contact-box">
+                    <img src="https://via.placeholder.com/100" alt="Sunita Verma">
+                    <h3>Sunita Verma</h3>
+                    <p>Email: sunita.verma@example.com</p>
+                    <p>Phone: 9876543263</p>
+                    <p>Location: Guntur</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Logo.png" alt="SAFE101 Logo">
+                <h2>SAFE101</h2>
+                <p>SAFE101 is an innovative app that uses cutting-edge technology to ensure the user's safety at all
+                    times. This app makes safety within every woman’s reach.</p>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Features.html">Features</a></li>
+                    <li><a href="Blogs.html">Blogs</a></li>
+                    <li><a href="Help.html">Help</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-connect">
+                &nbsp
+                <br><br>
+                <p>India: +91 6969696969</p>
+                <p>Email: <a href="mailto:info@safe101.app">info@safe101.app</a></p>
+            </div>
+
+            <div class="footer-download">
+                <h3>Download now</h3>
+                <div>
+                    <a href="#"><img
+                            src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+                            alt="Play Store" height="65vh" width="165vw" />
+                    </a>
+                    <a href="#"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8JWN0o1lukA7fuFuxCw53m_sx0haKyKBqg&s"
+                            alt="Play Store" height="45vh" width="145vw" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer Policy</a></li>
+                <li><a href="#">Refund and Cancellation Policy</a></li>
+                <li><a href="#">Shipping & Delivery Policy</a></li>
+            </ul>
+            <p>Copyright © 2024 SAFE101 Pty Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="Base.js"></script>
+</body>
+
+</html>

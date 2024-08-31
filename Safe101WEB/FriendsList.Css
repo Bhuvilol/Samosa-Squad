@@ -1,0 +1,57 @@
+* {
+    font-family: "Patrick Hand";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+}
+
+main {
+    padding: 20px 10%;
+    background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+}
+
+h2 {
+    text-align: center;
+    color: #774ecb;
+    text-shadow: 0.1px 0.1px 2px #6032bb;
+    font-size: 2.3em;
+    padding: 20px 30px 40px 30px;
+}
+
+.friend-list .friends-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.friend-box {
+    background-color: white;
+    border-radius: 5px;
+    /* border: 2px solid palevioletred; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    width: 100%;
+    box-shadow: 0px 1px 10px #7a37ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* padding-bottom: 20px; */
+}
+
+.friend-box img {
+    border-radius: 50%;
+    margin: 10px 15px 10px 10px;
+    border: 2px solid #9966ff;
+    box-shadow: 0px 1px 10px #7a37ff;
+}
+
+.friend-info h3 {
+    margin: 0 0 5px 0;
+    color: #555;
+}
+
+.friend-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #777;
+}

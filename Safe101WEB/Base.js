@@ -30,13 +30,6 @@ document.getElementById("profile-pic").addEventListener("click", function () {
   document.getElementById("sidebar-right").classList.add("open");
 });
 
-
-
-
-
-
-
-
 // Close Sidebar
 document.getElementById("close-sidebar").addEventListener("click", function () {
   document.getElementById("sidebar-right").classList.remove("open");

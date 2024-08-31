@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Handle tab switching
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
 
     tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const targetTab = this.getAttribute('data-tab');
 
             tabContents.forEach(content => {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector(`.tab-button[data-tab="${defaultTab}"]`).click();
 
     // Handle contact addition
-    document.getElementById('add-contact').addEventListener('click', function() {
+    document.getElementById('add-contact').addEventListener('click', function () {
         const name = document.getElementById('contact-name').value;
         const phone = document.getElementById('contact-phone').value;
         const relation = document.getElementById('contact-relation').value;

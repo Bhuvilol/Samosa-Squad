@@ -59,7 +59,6 @@
                     <label for="usability-rating-1">★</label>
                 </div>
             </div>
-            <!-- Add more rating groups here if needed -->
             <button class="submit-button" onclick="submitRating()">Submit</button>
         </div>
         <div id="popup-card" class="popup-card">
@@ -89,7 +88,6 @@
             const overallRating = getRating('overall-rating');
             const easeRating = getRating('ease-rating');
             const usabilityRating = getRating('usability-rating');
-            // Add more ratings here if needed
 
             const allRatings = [overallRating, easeRating, usabilityRating];
             const allAboveThree = allRatings.every(rating => rating >= 3);
@@ -133,11 +131,11 @@
         }
 
         function goHome() {
-            window.location.href = 'home.html'; // Change to your actual home page URL
+            window.location.href = 'home.html';
         }
 
         function logout() {
-            window.location.href = 'LoginPage.html'; // Change to your actual logout URL
+            window.location.href = 'LoginPage.html';
         }
     </script>
 </body>

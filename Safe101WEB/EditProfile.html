@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Safe101-EditProfile</title>
-    <!-- <link rel="icon" type="image/x-icon" href="Logo.png" /> -->
     <link rel="stylesheet" href="EditProfile.css" />
     <link rel="stylesheet" href="Navbar.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Patrick+Hand" />
@@ -57,7 +56,7 @@
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <div class="logo">
-                <img src="Logo.png" alt="Safe101 Logo" />
+                <img src="images/Logo.png" alt="Safe101 Logo" />
                 <h1 style="font-size: 30px">Safe101</h1>
             </div>
             <button class="close-sidebar">&times;</button>
@@ -99,7 +98,7 @@
     <div id="sidebar-right" class="sidebar-right">
         <span class="closebtn" id="close-sidebar">&times;</span>
         <div class="sidebar-content">
-            <img src="Logo.png" alt="Safe101 Logo" class="logo">
+            <img src="images/Logo.png" alt="Safe101 Logo" class="logo">
             <h1>Safe101</h1>
             <img src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" alt="User Avatar"
                 class="avatar">
@@ -115,12 +114,9 @@
         </div>
     </div>
 
-
-
     <div class="container bg1">
         <h1>Edit Profile</h1>
         <form id="edit-profile-form">
-            <!-- Personal Information Section -->
             <fieldset>
                 <legend>Personal Information</legend>
                 <div class="form-group">
@@ -154,7 +150,6 @@
                 </div>
             </fieldset>
 
-            <!-- Security Section -->
             <fieldset>
                 <legend>Security</legend>
                 <div class="form-group">
@@ -175,7 +170,6 @@
                 </div>
             </fieldset>
 
-            <!-- Preferences Section -->
             <fieldset>
                 <legend>Preferences</legend>
                 <div class="form-group">
@@ -209,7 +203,6 @@
                 </div>
             </fieldset>
 
-            <!-- Social Media Section -->
             <fieldset>
                 <legend>Social Media</legend>
                 <div class="form-group">
@@ -226,7 +219,6 @@
                 </div>
             </fieldset>
 
-            <!-- Profile Picture Section -->
             <fieldset>
                 <legend>Profile Picture</legend>
                 <div class="form-group">
@@ -235,7 +227,6 @@
                 </div>
             </fieldset>
 
-            <!-- Account Section -->
             <fieldset>
                 <legend>Account</legend>
                 <div class="form-group">
@@ -247,7 +238,6 @@
                 </div>
             </fieldset>
 
-            <!-- Buttons Section -->
             <div class="button-group">
                 <button type="submit" id="save-button">Save Changes</button>
                 <button type="button" id="cancel-button">Cancel</button>
@@ -255,8 +245,6 @@
             </div>
         </form>
     </div>
-
-
 
     <footer class="footer">
         <div class="footer-content">
@@ -312,9 +300,6 @@
             <p>Copyright © 2024 SAFE101 Pty Ltd. All rights reserved.</p>
         </div>
     </footer>
-
-
-
 
     <script src="Base.js"></script>
     <script>
@@ -412,7 +397,6 @@
 
         document.getElementById('deactivate-button').addEventListener('click', function () {
             if (confirm('Are you sure you want to deactivate your account? This action cannot be undone.')) {
-                // Handle account deactivation logic
                 alert('Account deactivated.');
             }
         });
@@ -426,7 +410,6 @@
             const re = /^\d{10}$/;
             return re.test(phone);
         }
-
 
     </script>
 </body>
